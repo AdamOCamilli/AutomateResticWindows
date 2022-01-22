@@ -16,7 +16,8 @@ namespace AutomateResticWindowsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            (new EntryForm()).Show();
+            Application.Run();
         }
     }
 }
