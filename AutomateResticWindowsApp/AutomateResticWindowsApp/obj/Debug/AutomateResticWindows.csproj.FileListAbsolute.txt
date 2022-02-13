@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\System.Management.Automation.dll
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\System.Management.Automation.xml
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindowsApp.EditCommandPopupForm.resources
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindowsApp.CommandsForm.resources
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindowsApp.EntryForm.resources
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\AutomateResticWindows.exe.config
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\AutomateResticWindows.exe
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\bin\Debug\AutomateResticWindows.pdb
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.exe
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticWindowsApp\obj\Debug\AutomateResticWindows.pdb

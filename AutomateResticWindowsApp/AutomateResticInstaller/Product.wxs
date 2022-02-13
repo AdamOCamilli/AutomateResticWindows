@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define AutomateResticWindows_TargetDir=$(var.AutomateResticWindows.TargetDir)?>
+	<Product Id="F0212782-13F5-4641-92BC-84E795064426" Name="AutomateResticWindows" Language="1033" Version="1.0.0.0" Manufacturer="Adam Camilli" UpgradeCode="c50343e9-0d99-49d0-aa34-b07083a441f9">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="AutomateResticWindows" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentRef Id="ApplicationShortcut" />
+			<ComponentRef Id="ApplicationShortcutDesktop" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="AutomateResticWindows" />
+			</Directory>
+			<Directory Id="ProgramMenuFolder">
+				<Directory Id="ApplicationProgramsFolder" Name="AutomateResticWindows"/>
+			</Directory>
+			<Directory Id="DesktopFolder" Name="Desktop"/>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<DirectoryRef Id="ApplicationProgramsFolder">
+			<Component Id="ApplicationShortcut" Guid="067CE0D8-FECE-4875-8EBD-CF462125E38C">
+				<Shortcut Id="ApplicationStartMenuShortcut" Name="AutomateResticWindows" Description="Automate Restic using Task Scheduler" Target="[INSTALLFOLDER]AutomateResticWindows.exe" WorkingDirectory="INSTALLFOLDER" />
+				<RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+				<RegistryValue Root="HKCU" Key="Software\MyWpfApplication" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+			</Component>
+		</DirectoryRef>
+		<DirectoryRef Id="DesktopFolder">
+			<Component Id="ApplicationShortcutDesktop" Guid="541EA7ED-B393-4C6A-9501-1C7AB58689C0">
+				<Shortcut Id="ApplicationDesktopShortcut" Name="AutomateResticWindows" Description="Automate Restic using Task Scheduler" Target="[INSTALLFOLDER]AutomateResticWindows.exe" WorkingDirectory="INSTALLFOLDER" />
+				<RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+				<RegistryValue Root="HKCU" Key="Software\AutomateResticWindows" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+	
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="AutomateResticWindows.exe" Guid="587d1cd2-ae4a-40dd-8d10-db570e106bdb">
+			  <File Id="AutomateResticWindows.exe" Name="AutomateResticWindows.exe" Source="$(var.AutomateResticWindows_TargetDir)AutomateResticWindows.exe" />
+			</Component>
+			<Component Id="AutomateResticWindows.exe.config" Guid="ce402714-ade2-4556-ab25-822ab34268da">
+			  <File Id="AutomateResticWindows.exe.config" Name="AutomateResticWindows.exe.config" Source="$(var.AutomateResticWindows_TargetDir)AutomateResticWindows.exe.config" />
+			</Component>
+			<Component Id="System.Management.Automation.dll" Guid="22ef585f-622f-4844-8b8e-7ccbcc881618">
+			  <File Id="System.Management.Automation.dll" Name="System.Management.Automation.dll" Source="$(var.AutomateResticWindows_TargetDir)System.Management.Automation.dll" />
+			</Component>
+			<Component Id="Microsoft.Management.Infrastructure.dll" Guid="28d8b5bb-0693-490b-92d1-3f2c12207398">
+			  <File Id="Microsoft.Management.Infrastructure.dll" Name="Microsoft.Management.Infrastructure.dll" Source="$(var.AutomateResticWindows_TargetDir)Microsoft.Management.Infrastructure.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1B8B7155-3658-4783-A073-BA8AF12D3D05}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AutomateResticWindowsApp</RootNamespace>
-    <AssemblyName>AutomateResticWindowsApp</AssemblyName>
+    <RootNamespace>AutomateResticWindows</RootNamespace>
+    <AssemblyName>AutomateResticWindows</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -88,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

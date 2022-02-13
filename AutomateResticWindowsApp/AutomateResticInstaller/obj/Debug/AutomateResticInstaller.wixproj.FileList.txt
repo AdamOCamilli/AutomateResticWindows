@@ -1,0 +1,7 @@
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticInstaller\bin\Debug\cab1.cab
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticInstaller\bin\Debug\AutomateResticInstaller.msi
+C:\Users\User\Documents\GitHub\AutomateResticWindows\AutomateResticWindowsApp\AutomateResticInstaller\bin\Debug\AutomateResticInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\AutomateResticInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\AutomateResticInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\AutomateResticInstaller.wixproj.BindBuiltOutputsFileListnull.txt
